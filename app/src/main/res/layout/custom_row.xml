@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rowLayout"
+    >
+
+    <LinearLayout
+        android:id="@+id/CardLinearLayout"
+        android:layout_width="411dp"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        android:onClick="cardView"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/personName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/personEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="EmailId"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/personAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/DeleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                app:srcCompat="@android:drawable/ic_menu_delete"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:contentDescription="TODO" />
+
+            <ImageView
+                android:id="@+id/personImageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="end"
+                android:contentDescription="TODO" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
